@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Currency_GuessMyNumber.Page1">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="RoyalBlue">
+            <Label Text="Guess My Number!"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="Large"/>
+            <Label Text="I'm Thinking of a number from 1 to 100"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="Medium"/>
+            <Button Text="Think of a number"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    FontSize="Small"
+                    BackgroundColor="Purple"
+                    Clicked="Button_Clicked"/>
+            <Label Text="Guess the number to earn your reward"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="Medium"/>
+            <Entry x:Name="Guess"
+                   VerticalOptions="Start"
+                   Margin="40"
+                   Text=""
+                   FontSize="Medium"
+                   Keyboard="Numeric"/>
+            <Button Text="Guess"
+                    VerticalOptions="Start"
+                    BackgroundColor="CornflowerBlue"
+                    Clicked="Button_Clicked_1"/>
+            <Label x:Name="Response"
+                   Text=""
+                   FontSize="Medium"
+                   Padding="50"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Center"/>
+            <Label x:Name="TheRandomNumber"
+                   Text=""
+                   VerticalOptions="End"
+                   HorizontalOptions="Center"
+                   IsVisible="false"/>
+            <Image Source="https://memezila.com/saveimage/Baby-yoda-wishes-you-Happy-new-year-meme-8926"
+                   VerticalOptions="Start"
+                   x:Name="Image"
+                   IsVisible="false"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

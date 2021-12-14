@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Currency_GuessMyNumber.MainPage">
+
+    <StackLayout BackgroundColor="DarkCyan">
+        <Image Source="https://www.ctvnews.ca/polopoly_fs/1.1457974.1379411801!/httpImage/image.jpg_gen/derivatives/landscape_1020/image.jpg"
+               VerticalOptions="Start"
+               HorizontalOptions="Center"
+               Margin="10"/>
+        <Label HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Start"
+               Text="Introduceti suma in Euro"
+               FontSize="Medium"/>
+        <Entry x:Name="EntryValue"
+               VerticalOptions="Start"
+               Text=""
+               Keyboard="Numeric"/>
+        <Button Text="Convert to lei"
+                BackgroundColor="Orange"
+                VerticalOptions="Start"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="Button_Clicked"/>
+        <Label x:Name="PrintValue"
+               VerticalOptions="Start"
+               HorizontalOptions="Center"
+               FontSize="Medium"/>
+        <Button Text="Change Game"
+                BackgroundColor="Red"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                Clicked="NavigateButton_OnClicked"/>
+    </StackLayout>
+
+</ContentPage>
